@@ -83,7 +83,6 @@ header p {
     width: relative;
     border-radius: 25px;
     clear: both;
-    margin-right: 2%;
 }
 
 .nav li {
@@ -332,6 +331,10 @@ footer {
         background-attachment: fixed;
         position: fixed;
     }
+    .nav
+    {
+        margin-right: 15px;
+    }
     #phone 
     {
         font-size: 1em;
@@ -364,18 +367,22 @@ footer {
     {
         position: absolute;
         background-color: #328c43;
-        border: solid #378995 3px;
+        border-bottom: solid #378995 3px;
+        border-left: solid #378995 3px;
+        border-right: solid #378995 3px;
+        
         padding-top: 20px;
         padding-bottom: 30px;
         text-align: center;
-        border-radius: 25px;
+        border-radius: 0px 0px 25px 25px;
         font-size: 1.5em;
         color: white;
         width: 35%;
-        margin-left: -2.5px;
-        margin-top: 20px;
+        margin-left: -3px;
+        margin-top: 0px;
 
 
+}
 }
     
 
