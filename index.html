@@ -5,9 +5,10 @@
     <title>Home</title>
     <meta name= "viewport" content= "width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type='text/javascript' src="jquery.localScroll-2.0.0/jquery.localScroll.min.js"></script>
     <script>
-        $(document).ready(function() {
+ $(document).ready(function() {
             $('html, body').animate({scrollTop: + 170});
             $("a").click(function(event) {
                 if (this.hash !== "") {
@@ -28,7 +29,7 @@
         <div id="email">mary@maryvmcguire.com</div><div id="phone">206-709-3998</div>
         <nav> 
             <ul class="nav">
-                <li><a href="#services">Services</a></li>
+                <li><a title="" href="#services">Services</a></li>
                 <li><a href="#clients">Clients</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -38,7 +39,7 @@
     
     <div id="body"> 
 <!------------Services------------------->
-    <a id="services" class="topDown"></a><br/>
+    <a id="services" class="topDown"></a>
     <h2>Services</h2>
     <div id="servicewrapper">
         <p class="service 1">Problem Definition<span class="Hover 1">Work with organizations to identify and define information that is needed to make informed decisions and develop effective organizational and marketing strategies, tactics, and positions.</span></p>
@@ -53,7 +54,7 @@
     </div>
 
 <!------------Clients------------------->
-    <a id="clients" class="topDown"></a><br/>
+    <a id="clients" class="topDown"></a>
     <h2>Clients</h2>    
     <div id="client1" class="client">
         <p>Seattle Police Department</p>
@@ -85,8 +86,8 @@
     </div>
 
  <!------------About------------------->
-    <a id="about" class="topDown"></a><br/>
-    <h2>About</h2>
+    <a id="about" class="topDown"></a>
+        <h2>About</h2>
     <div id="aboutdiv">
         <img src="McGuireSmall.jpg" class="img-circle" alt="Portrait"><p>The Mary V. McGuire firm was formed in 1992 to assist organizations in developing marketing strategies and public or internal policies through research and communication with employees, customers, and the public.</p>
         <span class="more"><p id="moreHide">More...</p>
@@ -96,19 +97,20 @@
     
     
  <!------------Contact------------------->
-    <h2>Contact</h2>
-    <a id="contact" class="topDownMore"></a>
+        <a id="contact" class="topDownMore"></a>
+        <h2>Contact</h2>
     <div id="contactdiv">
         <p>mary@maryvmcguire.com<br/>206-709-3998</p>
-        <form>
-            <label for="fname">Name:</label><br/>
-            <input type="text" id="fname" name="fname"><br/>
-            <label for="lname">Email:</label><br/>
-            <input type="text" id="lname" name="lname"><br/>
+        <form action="send_mail.php" method="post">
+            <label for="first_name">Name:</label><br/>
+            <input type="text" name="first_name" required><br/>
+            <label for="email_address">Email:</label><br/>
+            <input type="text" name="email_address"><br/>
             <div id="contactmsg">Message:</div>
-            <textarea id="msg" alt="message"></textarea> <br/>
-            <input type="submit" value="Submit">
+            <textarea id="msg" name="comments" maxlength="500" alt="message"></textarea> <br/>
+            <button>Submit</button>
         </form>
+
     </div>
         
 <!-------------Footer------------>
