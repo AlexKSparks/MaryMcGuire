@@ -84,6 +84,18 @@ header p {
     border-radius: 25px;
     clear: both;
 }
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 90%;
+    padding: 10px 10px;
+    background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .nav li {
     display: inline;
