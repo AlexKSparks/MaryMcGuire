@@ -1,0 +1,405 @@
+/*Main*/
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    position:relative;
+    background-image: url("Tracks_lowRes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#body
+{
+    margin-top: 200px;
+}
+
+/*section titles*/
+h2 {
+    text-align: center;
+    color: white;
+}
+
+/*Scroll feature*/
+a.topDown::before {
+    display: block;
+    content: " ";
+    height: 170px;
+    visibility: hidden;
+}
+
+a.topDownMore::before {
+    display: block;
+    content: " ";
+    margin-top: -250px;
+    height: 250px;
+    visibility: hidden;
+}
+
+/*header*/
+header {
+    background-position: top left;
+    background-repeat: no-repeat;
+    position:fixed;
+    width: 100%;  
+    top: 0;
+    
+}
+
+h1 {
+    background-position: top center;
+    text-align: center;
+    position: relative;
+    color: #328c43;
+    text-shadow: -1px 0px white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 2em;  
+}
+
+header p {
+    color: white;
+    text-align: center;
+    font-size:1.2em
+}
+
+#phone {
+    font-size: 0.9em;
+    text-align:center;
+    color: white;
+}
+
+#email {
+    font-size: 1em;
+    text-align:center;
+    color:white;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/*Navigation*/
+.nav {
+    padding:5px;
+    overflow: hidden;
+    background-color: #328c43;
+    border-radius: 25px;
+    clear: both;
+}
+
+.nav li {
+    display: inline;
+    text-align: center;
+    width: 25%;
+    float: left;
+    
+}
+
+.nav a {
+    display: inline;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+ul li a:link {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*Services*/
+#serviceswrapper{
+    display:block;
+}
+
+.service {
+    background-color: #328c43;
+    border: solid #378995 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.5em;
+    color: white;
+    
+}
+
+.Hover {
+    display: none;
+}
+
+.service:hover .Hover {
+    display: block;
+    font-size: 0.7em;
+    padding-top: 1em;
+    
+}
+
+/*Clients*/
+.client > * {
+    margin: 0;
+    padding: 5% 1%;
+    text-align: center;
+    color: white;  
+}
+
+.client > p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+
+#client1 {
+    background-color: #378995;
+    border-radius: 25px;
+    border: solid #328c43 3px;
+}
+
+#client2 {
+    background-color: #328c43;
+    border-radius: 25px;
+    margin-top: 1.75em;
+    border: solid #378995 3px;
+}
+
+#client3 {
+    background-color: #378995; 
+    border-radius: 25px;
+        margin-top: 2em;
+    border: solid #328c43 3px;
+}
+
+#client4 {
+    background-color: #328c43;
+    border-radius: 25px;
+        margin-top: 2em;
+    border: solid #378995 3px;
+}
+
+#client5 {
+    background-color: #378995;
+    border-radius: 25px;
+        margin-top: 2em;
+    border: solid #328c43 3px;
+}
+
+#client6 {
+    background-color: #328c43;
+    border-radius: 25px;
+        margin-top: 2em;
+    border: solid #378995 3px;
+}
+
+#client7 {
+    background-color: #378995;    
+    border-radius: 25px;   
+        margin-top: 2em;
+    border: solid #328c43 3px;
+}
+
+.CHover {
+    display: none;
+}
+
+.client:hover .CHover {
+    display: block;
+    font-size: 1.1em;
+    padding-top: 1em;
+}
+
+
+/*About*/
+#aboutdiv {
+    background-color: #328c43;
+    border-radius: 25px;
+    padding: 30px 20px 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width:156px;
+    text-align: center;
+}
+
+.AHover {
+    display: none;
+}
+.more:hover .AHover {
+    display: block;
+}
+
+/*Contact*/
+#contactdiv {
+    background-color: #378995;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: solid #328c43 3px;
+    margin: auto;
+    margin-top:10px;
+    text-align: center;
+    display:inline-grid;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 1.25em;
+    box-sizing: border-box;
+    color:white;
+}
+
+input[type=text] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color:#328c43;
+    border-radius: 4px;
+}
+
+#msg {
+    height: 150px;
+    width: 75%;
+     margin: 0px 0;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color:#328c43;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;      
+}
+
+#contactmsg {
+    margin-top:0px;
+    margin-bottom:8px;
+}
+
+input[type=submit] {
+    width: 25%;
+    background-color: #328c43;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Tablet Screen*/
+@media (min-width: 550px)
+{
+    body
+    {
+        background-image:url("Tracks.jpg");
+    }
+    header
+    {
+        background-image: url("Tracks.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: fixed;
+    }
+    #phone 
+    {
+        font-size: 1em;
+        text-align:left;
+        margin-left: 5%;
+        float: left;
+        margin-bottom: 5px;
+
+    }
+
+    #email 
+    {
+        font-size: 1em;
+        text-align:center;
+        float: right;
+        margin:0;
+        margin-right: 5%;
+        margin-bottom: 5px;
+
+    }
+    #servicewrapper
+    {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-gap: 1em;
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+        .service > span
+    {
+        position: absolute;
+        background-color: #328c43;
+        border: solid #378995 3px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+        border-radius: 25px;
+        font-size: 1.5em;
+        color: white;
+        width: 35%;
+        margin-left: -2.5px;
+        margin-top: 20px;
+
+
+}
+    
+
+/*Desktop Screen*/
+@media (min-width: 650px)
+{
+    #servicewrapper
+    {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-gap: 1em;
+        font-size: .8em;
+        justify-content: space-between;
+        
+
+    }
+    .service:hover .Hover 
+    {
+        display: block;
+        font-size: 0.9em;
+        padding-top: 1em;
+
+    }
+    .service > span
+    {
+        width: 22%;
+
+    }
+    
+    .CHover 
+    {
+        display: block;
+        font-size: 1.1em;
+        padding-top: 1em;
+    }
+    .AHover 
+    {
+        display: block;
+    }
+    #moreHide
+    {
+        display:none;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <title>Home</title>
+    <meta name= "viewport" content= "width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('html, body').animate({scrollTop: + 170});
+            $("a").click(function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function() {
+                        window.location.hash = hash;
+                    });
+                } 
+            });
+        });
+    </script>
+</head>   
+<body>             
+    <header>
+        <h1 style="color: #328c43">Mary V. McGuire</h1>
+        <p>Marketing <span id="sub" style="font-size: 0.7em">and</span> Policy Research<br/> + Consulting</p> 
+        <div id="email">mary@maryvmcguire.com</div><div id="phone">206-709-3998</div>
+        <nav> 
+            <ul class="nav">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="body"> 
+<!------------Services------------------->
+    <a id="services" class="topDown"></a><br/>
+    <h2>Services</h2>
+    <div id="servicewrapper">
+        <p class="service 1">Problem Definition<span class="Hover 1">Work with organizations to identify and define information that is needed to make informed decisions and develop effective organizational and marketing strategies, tactics, and positions.</span></p>
+        
+        <p class="service 2">Research Project Design<span class="Hover 2">Design research projects that use appropriate quantitative and/or qualitative research techniques to produce objective information to be used in organizational decision making and policy development.</span></p>
+        
+        <p class="service 3">Questionnaire Design<span class="Hover 3">Develop questionnaires and interview protocols to provide meaningful, usable data from personal interviews, telephone interviews, or written or electronic surveys.</span></p>
+        
+        <p class="service 4">Focus Group Design<span class="Hover 4">Develop procedures and discussion guides to generate pertinent, usable information from focus group discussions.</span></p>
+        <p class="service 5">Data Collection<span class="Hover 5">Conduct and administer research projects, including focus groups, executive interviews, telephone surveys, and written surveys, including online surveys, with employees, customers, prospects, and the public.</span></p>
+        <p class="service 6">Data Analysis &amp; Reporting<span class="Hover 6">Analyze and interpret qualitative and quantitative data, conduct appropriate statistical analyses, and prepare written and oral reports and presentations to make the results of research clear, accessible, and useful in organizational decision making and policy development.</span></p>
+    </div>
+
+<!------------Clients------------------->
+    <a id="clients" class="topDown"></a><br/>
+    <h2>Clients</h2>    
+    <div id="client1" class="client">
+        <p>Seattle Police Department</p>
+        <span class="CHover 1">Design, manage, analyze results, and report customer satisfaction surveys of individuals who call 9-1-1 and have an officer dispatched to provide assistance, including tracking changes in customer experiences and opinions over time</span>
+    </div>
+    <div id="client2" class="client">
+        <p>Seattle Police Foundation, Kaiser Permanente</p>
+        <span class="CHover 2">Design and conduct surveys and a focus group to assess the impacts of the Rainier Walk and Talk program on Kaiser Permanente members’, Kaiser Permanente staff, community members’, and police officers’ perceptions and opinions of their health and well-being, of Kaiser Permanente, and of the Seattle Police Department.</span>
+    </div>
+    <div id="client3" class="client">
+        <p>University of Washington Bothell ECSCEL Program</p>
+        <span class="CHover 3">Design and conduct surveys of education leaders who graduated from the Extending Capacity for Special Education Leadership (ECSEL) program to assess program effectiveness and guide program improvements.</span>
+    </div>
+    <div id="client4" class="client">
+        <p>King County Department of Natural Resources and Parks</p>
+        <span class="CHover 4">Design, manage, and report on surveys assessing employees’ opinions, satisfaction, and experience with their jobs and work organizations. Analyze and use survey results to develop Department performance measures.</span>
+    </div>
+    <div id="client5" class="client">
+        <p>King County Industrial Waste Program</p>
+        <span class="CHover 5">Design, implement, and report on satisfaction surveys of organizations holding industrial waste permits.</span>
+    </div>
+    <div id="client6" class="client">
+        <p>King County Executive's Office</p>
+        <span class="CHover 6">Design and conduct focus groups to explore county residents’ opinions of the importance of performance measures, interest in county performance information, and preferences regarding performance measures reports.</span>
+    </div>
+    <div id="client7" class="client">
+        <p>Boeing Employees Credit Union</p>
+        <span class="CHover 7">Design and conduct focus groups to explore customers’ use of, interest in, and decisions regarding financial products and services.</span>
+    </div>
+
+ <!------------About------------------->
+    <a id="about" class="topDown"></a><br/>
+    <h2>About</h2>
+    <div id="aboutdiv">
+        <img src="McGuireSmall.jpg" class="img-circle" alt="Portrait"><p>The Mary V. McGuire firm was formed in 1992 to assist organizations in developing marketing strategies and public or internal policies through research and communication with employees, customers, and the public.</p>
+        <span class="more"><p id="moreHide">More...</p>
+        <span class="AHover"><p>Mary McGuire is experienced designing, conducting, and managing marketing, policy, and organizational research. Her research and consulting work has included studies of employee opinions, customer needs, customer satisfaction, service quality, advertising effectiveness, and public opinion. She is experienced using both quantitative and qualitative research techniques, and she has worked with many private and government organizations in a variety of industries, including King County Department of Natural Resources and Parks, the Seattle Police Department, the University of Washington Libraries, and Microsoft.</p>
+        <p>A native of Seattle, Mary McGuire graduated from Stanford University. She earned a Ph.D. in social psychology from the University of Washington, where her minor was quantitative methods, and a J.D. from the University of Washington School of Law. She is a part-time faculty member in the School of Interdisciplinary Arts and Sciences at the University of Washington Bothell, where she has taught several courses including introduction to psychology, marketing research, marketing management, and managerial communication. Dr. McGuire is a member of the American Psychological Association and former chair of the Association’s Committee on Legal Issues.</p></span></span>
+    </div>
+    
+    
+ <!------------Contact------------------->
+    <h2>Contact</h2>
+    <a id="contact" class="topDownMore"></a>
+    <div id="contactdiv">
+        <p>mary@maryvmcguire.com<br/>206-709-3998</p>
+        <form>
+            <label for="fname">Name:</label><br/>
+            <input type="text" id="fname" name="fname"><br/>
+            <label for="lname">Email:</label><br/>
+            <input type="text" id="lname" name="lname"><br/>
+            <div id="contactmsg">Message:</div>
+            <textarea id="msg" alt="message"></textarea> <br/>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+</body>    
+</html>
+
