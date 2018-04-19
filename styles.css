@@ -283,7 +283,7 @@ input[type=text] {
     margin-bottom:8px;
 }
 
-button {
+#button {
     width: 25%;
     background-color: #328c43;
     color: white;
