@@ -3,7 +3,7 @@
 body {
     font-family: Verdana, Geneva, sans-serif;
     position:relative;
-    background-image: url("Tracks_lowRes.jpg");
+    background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ a.topDownMore::before {
 header {
     background-position: top left;
     background-repeat: no-repeat;
-    position:fixed;
+/*    position:fixed;*/
     width: 100%;  
     top: 0;
     
@@ -80,8 +80,10 @@ header p {
     padding:5px;
     overflow: hidden;
     background-color: #328c43;
+    width: relative;
     border-radius: 25px;
     clear: both;
+    margin-right: 2%;
 }
 
 .nav li {
@@ -299,16 +301,31 @@ input[type=submit] {
     text-align: center;
 }
 
+/*Footer*/
+footer {
+    overflow: hidden;
+    background-color: #328c43;
+    width: relative;
+    border-radius: 25px;
+    clear: both;
+    margin-top: 7.5%;
+    font-size: .8em;
+    color: white;
+    text-align: center;
+    
+}
+
+
 /*Tablet Screen*/
 @media (min-width: 550px)
 {
     body
     {
-        background-image:url("Tracks.jpg");
+        background-image:url("Tracks.jpg");/*Photo copyright M. G. Moon*/
     }
     header
     {
-        background-image: url("Tracks.jpg");
+        background-image: url("Tracks.jpg");/*Photo copyright M. G. Moon*/
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
