@@ -112,14 +112,14 @@
         <h2>Contact</h2>
     <div id="contactdiv">
         <p>mary@maryvmcguire.com<br/>206-709-3998</p>
-        <form action="send_mail.php" method="post">
-            <label for="first_name">Name:</label><br/>
-            <input type="text" name="first_name" required><br/>
+        <form method="post" name="myemailform" action="send_mail.php" >
+            <label for="name">Name:</label><br/>
+            <input type="text" name="name" required><br/>
             <label for="email_address">Email:</label><br/>
-            <input type="text" name="email_address"><br/>
+            <input type="text" name="email_address" required><br/>
             <div id="contactmsg">Message:</div>
-            <textarea id="msg" name="comments" maxlength="500" alt="message"></textarea> <br/>
-            <button id="button">Submit</button>
+            <textarea id="msg" name="comments" maxlength="500" alt="message" required></textarea> <br/>
+            <input type="submit" id="button" value="Submit">
         </form>
 
     </div>
