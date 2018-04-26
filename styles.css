@@ -9,9 +9,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#body
+#content
 {
-    margin-top: 200px;
+    margin-top: ;
 }
 
 /*section titles*/
@@ -88,13 +88,13 @@ header p {
 {
     position: fixed;
     top: 0;
-    width: 90%;
-    padding: 10px 10px;
-    background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    width: 97%;
+        background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: fixed;
 }
 
 .nav li {
@@ -137,12 +137,12 @@ ul li a:hover {
 .service {
     background-color: #328c43;
     border: solid #378995 3px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     text-align: center;
     border-radius: 25px;
     font-size: 1.5em;
     color: white;
+    margin-bottom: 1.5em;
+
     
 }
 
@@ -326,7 +326,7 @@ footer {
 
 
 /*Tablet Screen*/
-@media (min-width: 550px)
+@media (min-width: 560px)
 {
     body
     {
@@ -369,7 +369,7 @@ footer {
     {
         display: grid;
         grid-template-columns: 40% 40%;
-        grid-gap: 1em;
+        grid-gap: 2.5em;
         justify-content: space-between;
         margin: 0 5%;
     }
@@ -377,22 +377,22 @@ footer {
     {
         position: absolute;
         background-color: #328c43;
-        border-bottom: solid #378995 3px;
-        border-left: solid #378995 3px;
-        border-right: solid #378995 3px;
-        
+        border: solid #378995 3px;
         padding-top: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         text-align: center;
-        border-radius: 0px 0px 25px 25px;
-        font-size: 1.5em;
+        border-radius: 25px;
+        font-size: 1em;
         color: white;
         width: 35%;
         margin-left: -3px;
         margin-top: 0px;
 
-
-}
+    }
+    #data > span
+    {
+        margin-top: 25px;
+    }
 }
     
 
@@ -403,7 +403,7 @@ footer {
     {
         display: grid;
         grid-template-columns: 25% 25% 25%;
-        grid-gap: 1em;
+        grid-gap: 5em;
         font-size: .8em;
         justify-content: space-between;
         
@@ -416,10 +416,14 @@ footer {
         padding-top: 1em;
 
     }
-    .service > span
+    .service >  span
     {
         width: 22%;
-
+        padding-right: 1.5px;
+    }
+    #data > span
+    {
+        margin-top: 0;
     }
     
     .CHover 

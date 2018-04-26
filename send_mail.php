@@ -9,7 +9,7 @@ $email_body = "You have recieved an new message from $name\n. Here is the messag
 
 $to = "alex.sparks90@yahoo.com";
 $headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
+$headers = "Reply-To: $visitor_email \r\n";
 mail ($to,$email_subject,$email_body,$headers);
 
 function IsInjected($str)
