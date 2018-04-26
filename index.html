@@ -6,10 +6,9 @@
     <meta name= "viewport" content= "width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type='text/javascript' src="jquery.localScroll-2.0.0/jquery.localScroll.min.js"></script>
     <script>
  $(document).ready(function(){
-            $('html, body').animate({scrollTop: + 170});
+            //$('html, body').animate({scrollTop: + 170});
             $("a").click(function(event) {
                 if (this.hash !== "") {
                     event.preventDefault();
@@ -21,19 +20,7 @@
             });
         });
     </script>
-<!--
-    <script>
-        $(window).scroll(function(){
-            var nav = $('nav'),
-                scroll = $(window).scrollTop();
-            
-            if (scroll >= 200) nav.addClass('sticky');
-            else nav.removeClass('sticky');
-        })
-    
-    
-    </script>
--->
+
     </head>
 
 <body>             
@@ -105,14 +92,14 @@
         <h2>About</h2>
     <div id="aboutdiv">
         <img src="McGuireSmall.jpg" class="img-circle" alt="Portrait"><p>The Mary V. McGuire firm was formed in 1992 to assist organizations in developing marketing strategies and public or internal policies through research and communication with employees, customers, and the public.</p>
-        <span class="more"><p id="moreHide">More...</p>
+        <span class="more"><p id="moreHide"><span class="icon-circle-down"></span></p>
         <span class="AHover"><p>Mary McGuire is experienced designing, conducting, and managing marketing, policy, and organizational research. Her research and consulting work has included studies of employee opinions, customer needs, customer satisfaction, service quality, advertising effectiveness, and public opinion. She is experienced using both quantitative and qualitative research techniques, and she has worked with many private and government organizations in a variety of industries, including King County Department of Natural Resources and Parks, the Seattle Police Department, the University of Washington Libraries, and Microsoft.</p>
         <p>A native of Seattle, Mary McGuire graduated from Stanford University. She earned a Ph.D. in social psychology from the University of Washington, where her minor was quantitative methods, and a J.D. from the University of Washington School of Law. She is a part-time faculty member in the School of Interdisciplinary Arts and Sciences at the University of Washington Bothell, where she has taught several courses including introduction to psychology, marketing research, marketing management, and managerial communication. Dr. McGuire is a member of the American Psychological Association and former chair of the Association’s Committee on Legal Issues.</p></span></span>
     </div>
     
     
  <!------------Contact------------------->
-        <a id="contact" class="topDownMore"></a>
+        <a id="contact" class="topDown"></a>
         <h2>Contact</h2>
     <div id="contactdiv">
         <p>mary@maryvmcguire.com<br/>206-709-3998</p>
