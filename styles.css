@@ -84,18 +84,20 @@ header p {
     border-radius: 25px;
     clear: both;
 }
+/*
 .sticky
 {
     position: fixed;
     top: 0;
     width: 97%;
-        background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
+        background-image: url("Tracks_lowRes.jpg");Photo copyright M. G. Moon
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         position: fixed;
 }
+*/
 
 .nav li {
     display: inline;
