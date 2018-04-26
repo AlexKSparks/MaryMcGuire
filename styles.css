@@ -32,15 +32,17 @@
 body {
     font-family: Verdana, Geneva, sans-serif;
 /*    position:relative;*/
-    background-image: url("Tracks.jpg");/*Photo copyright M. G. Moon*/
+    background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
     
 }
 #content
 {
+        margin-left: -3px;
 /*    margin-top: 240px;*/
 }
 
