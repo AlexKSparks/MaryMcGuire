@@ -37,7 +37,7 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 /*    position:relative;*/
     background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
-    background-size: fill;/*<---change this --->potentially fill?*/
+    background-size: cover;/*<---change this --->potentially fill?*/
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
