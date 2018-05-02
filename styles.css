@@ -1,11 +1,11 @@
 /*Main*/
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ngujjv');
-  src:  url('fonts/icomoon.eot?ngujjv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ngujjv') format('truetype'),
-    url('fonts/icomoon.woff?ngujjv') format('woff'),
-    url('fonts/icomoon.svg?ngujjv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?swjfth');
+  src:  url('fonts/icomoon.eot?swjfth#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?swjfth') format('truetype'),
+    url('fonts/icomoon.woff?swjfth') format('woff'),
+    url('fonts/icomoon.svg?swjfth#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,15 +25,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-circle-up:before {
+  content: "\ea41";
+}
 .icon-circle-down:before {
   content: "\ea43";
 }
 
+
 body {
     font-family: Verdana, Geneva, sans-serif;
 /*    position:relative;*/
-            background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
-    background-size: cover;
+    background-image: url("Tracks_lowRes.jpg");/*Photo copyright M. G. Moon*/
+    background-size: fill;/*<---change this --->potentially fill?*/
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -396,18 +400,22 @@ footer {
     }
         .service > span
     {
+/*
         position: absolute;
         background-color: #328c43;
         border: solid #378995 3px;
         padding-top: 20px;
         padding-bottom: 20px;
+*/
         text-align: center;
+/*
         border-radius: 25px;
         font-size: 1em;
         color: white;
         width: 35%;
         margin-left: -3px;
         margin-top: 0px;
+*/
 
     }
     #data > span
@@ -437,10 +445,12 @@ footer {
         padding-top: 1em;
 
     }
+/*
     .service >  span
     {
         width: 22%;
     }
+*/
     #data > span
     {
         margin-top: 0;
