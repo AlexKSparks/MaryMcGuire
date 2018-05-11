@@ -41,20 +41,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
-    
-}
-#content
-{
-
-
 }
 
 /*section titles*/
 h2 {
+    font-size:1.75em;
     text-align: center;
-    color: white;
+    color: #328c43;
+    text-shadow: -1px 0px white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 /*Scroll feature*/
@@ -72,7 +66,6 @@ header {
 /*    position:fixed;*/
     width: 100%;  
     top: 0;
-    
 }
 
 h1 {
@@ -109,7 +102,7 @@ header p {
     padding:5px;
     overflow: hidden;
     background-color: #328c43;
-    width: relative;
+/*    width: relative;*/
     border-radius: 25px;
     clear: both;
 }
@@ -148,7 +141,8 @@ ul li a:hover {
 }
 
 /*Services*/
-#serviceswrapper{
+
+#serviceswrapper {
     display:block;
 }
 
@@ -160,7 +154,6 @@ ul li a:hover {
     font-size: 1.5em;
     color: white;
     margin-bottom: 1.5em;
-
 }
 
 .Hover {
@@ -172,10 +165,10 @@ ul li a:hover {
     font-size: 0.7em;
     padding-top: 1em;
     padding-bottom: 1em;
-    
 }
 
 /*Clients*/
+
 .client > * {
     margin: 0;
     padding: 10px;
@@ -250,12 +243,15 @@ ul li a:hover {
 
 
 /*About*/
+
 #aboutdiv {
     background-color: #328c43;
+    border: solid #378995 3px;
     border-radius: 25px;
     padding: 30px 20px 30px;
     margin-bottom: 10%;
     text-align: center;
+    color:white;
 }
 
 .img-circle {
@@ -272,6 +268,7 @@ ul li a:hover {
 }
 
 /*Contact*/
+
 #contactdiv {
     background-color: #378995;
     border: solid #328c43 3px;
@@ -332,7 +329,7 @@ input[type=text] {
 footer {
     overflow: hidden;
     background-color: #328c43;
-    width: relative;
+/*    width: relative;*/
     border-radius: 25px;
     clear: both;
     margin-top: 7.5%;
@@ -341,7 +338,6 @@ footer {
     text-align: center;
     
 }
-
 
 /*Tablet Screen*/
 @media (min-width: 560px)

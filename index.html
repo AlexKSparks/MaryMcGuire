@@ -1,14 +1,14 @@
+
 <!DOCTYPE html>
 <html lang=en>
 <head>
     <meta charset=utf-8>
     <title>Home</title>
-    <meta name= "viewport" content= "initial-scale=1, maximum-scale=1">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
- $(document).ready(function(){
-          //  $('html, body').animate({scrollTop: + 170});
+        $(document).ready(function(){
             $("a").click(function(event) {
                 if (this.hash !== "") {
                     event.preventDefault();
@@ -20,7 +20,6 @@
             });
         });
     </script>
-
     </head>
 
 <body>             
@@ -31,16 +30,16 @@
         <nav> 
             <ul class="nav">
                 <li><a id="sernav" title="" href="#services">Services</a></li>
-                <li><a id="clientnav"href="#clients">Clients</a></li>
-                <li><a id="aboutnav"href="#about">About</a></li>
-                <li><a id="contactnav"href="#contact">Contact</a></li>
+                <li><a id="clientnav" href="#clients">Clients</a></li>
+                <li><a id="aboutnav" href="#about">About</a></li>
+                <li><a id="contactnav" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
     <div id="content"> 
-        
-        
-<!------------Services------------------->
+               
+<!-- Services -->
     <a id="services" class="topDown"></a>
     <h2>Services</h2>
     <div id="servicewrapper">
@@ -57,7 +56,7 @@
         <span><div class="service 6"><p>Data Analysis &amp; Reporting</p><span class="Hover 6">Analyze and interpret qualitative and quantitative data, conduct appropriate statistical analyses, and prepare written and oral reports and presentations to make the results of research clear, accessible, and useful in organizational decision making and policy development.</span></div></span>
     </div>
 
-<!------------Clients------------------->
+<!-- Clients -->
     <a id="clients" class="topDown"></a>
     <h2>Clients</h2>    
     <div id="client1" class="client">
@@ -69,7 +68,7 @@
         <span class="CHover 2">Design and conduct surveys and a focus group to assess the impacts of the Rainier Walk and Talk program on Kaiser Permanente members’, Kaiser Permanente staff, community members’, and police officers’ perceptions and opinions of their health and well-being, of Kaiser Permanente, and of the Seattle Police Department.</span>
     </div>
     <div id="client3" class="client">
-        <p>University of Washington Bothell ECSCEL Program</p>
+        <p>University of Washington Bothell ECSEL Program</p>
         <span class="CHover 3">Design and conduct surveys of education leaders who graduated from the Extending Capacity for Special Education Leadership (ECSEL) program to assess program effectiveness and guide program improvements.</span>
     </div>
     <div id="client4" class="client">
@@ -89,37 +88,35 @@
         <span class="CHover 7">Design and conduct focus groups to explore customers’ use of, interest in, and decisions regarding financial products and services.</span>
     </div>
 
- <!------------About------------------->
+ <!-- About -->
     <a id="about" class="topDown"></a>
-        <h2>About</h2>
+    <h2>About</h2>
     <div id="aboutdiv">
         <img src="McGuireSmall.jpg" class="img-circle" alt="Portrait"><p>The Mary V. McGuire firm was formed in 1992 to assist organizations in developing marketing strategies and public or internal policies through research and communication with employees, customers, and the public.</p>
         <span class="more"><p id="moreHide"><span class="icon-circle-down"></span></p>
         <span class="AHover"><p>Mary McGuire is experienced designing, conducting, and managing marketing, policy, and organizational research. Her research and consulting work has included studies of employee opinions, customer needs, customer satisfaction, service quality, advertising effectiveness, and public opinion. She is experienced using both quantitative and qualitative research techniques, and she has worked with many private and government organizations in a variety of industries, including King County Department of Natural Resources and Parks, the Seattle Police Department, the University of Washington Libraries, and Microsoft.</p>
         <p>A native of Seattle, Mary McGuire graduated from Stanford University. She earned a Ph.D. in social psychology from the University of Washington, where her minor was quantitative methods, and a J.D. from the University of Washington School of Law. She is a part-time faculty member in the School of Interdisciplinary Arts and Sciences at the University of Washington Bothell, where she has taught several courses including introduction to psychology, marketing research, marketing management, and managerial communication. Dr. McGuire is a member of the American Psychological Association and former chair of the Association’s Committee on Legal Issues.</p></span></span>
     </div>
-    
-    
- <!------------Contact------------------->
-        <a id="contact" class="topDown"></a>
-        <h2>Contact</h2>
+  
+ <!-- Contact -->
+    <a id="contact" class="topDown"></a>
+    <h2>Contact</h2>
     <div id="contactdiv">
         <p>mary@maryvmcguire.com<br/>206-709-3998</p>
         <form method="post" name="myemailform" action="send_mail.php" >
-            <label for="name">Name:</label><br/>
+            <label>Name:</label><br/>
             <input type="text" name="name" required><br/>
-            <label for="email_address">Email:</label><br/>
+            <label>Email:</label><br/>
             <input type="text" name="email_address" required><br/>
             <div id="contactmsg">Message:</div>
-            <textarea id="msg" name="comments" maxlength="500" alt="message" required></textarea> <br/>
+            <textarea id="msg" name="comments" maxlength="500" required></textarea> <br/>
             <input type="submit" id="button" value="Submit">
         </form>
-
     </div>
-        
-<!-------------Footer------------>
-        <footer>
-        <p>Copyright &copy; 2018 Mary V. McGuire | Photo &copy; M. G. Moon</p></footer>
+
+<!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2018 Mary V. McGuire | Background Photo &copy; M. G. Moon</p></footer>
     </div>
 </body>    
 </html>
